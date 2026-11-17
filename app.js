@@ -110,6 +110,17 @@
     showView("quizView");
   }
 
+  function attachThumbnailFallback(image, vlog) {
+    image.addEventListener("error", () => {
+      if (!image.dataset.fallbackTried && vlog?.youtube_id) {
+        image.dataset.fallbackTried = "true";
+        image.src = "https://i.ytimg.com/vi/" + encodeURIComponent(vlog.youtube_id) + "/hqdefault.jpg";
+      } else {
+        image.hidden = true;
+      }
+    });
+  }
+
   function createVlogReference(vlogId, disabled) {
     const vlog = vlogById.get(Number(vlogId));
     if (!vlog) return document.createTextNode("this vlog");
@@ -132,6 +143,7 @@
     image.src = vlog.thumbnail_url;
     image.alt = "";
     image.loading = "lazy";
+    attachThumbnailFallback(image, vlog);
     const caption = document.createElement("span");
     caption.textContent = vlog.title;
     preview.append(image, caption);
@@ -231,6 +243,7 @@
       image.src = vlog.thumbnail_url;
       image.alt = "";
       image.loading = "lazy";
+      attachThumbnailFallback(image, vlog);
       button.append(image);
     }
     const copy = document.createElement("span");
