@@ -1,39 +1,1230 @@
 {
-  "schema_version": "2.1",
+  "schema_version": "3.0",
   "quiz_title": "Vlog Quiz",
   "pass_percentage": 70,
   "difficulty_categories": [
-    {"id":"easy","label":"Easy","enabled":true},
-    {"id":"medium","label":"Medium","enabled":true},
-    {"id":"hard","label":"Hard","enabled":false,"status":"Coming soon"},
-    {"id":"extreme","label":"Extreme","enabled":false,"status":"Coming soon"}
+    {
+      "id": "easy",
+      "label": "Easy",
+      "enabled": true,
+      "accent": "#69d69a"
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "enabled": true,
+      "accent": "#efbd62"
+    },
+    {
+      "id": "hard",
+      "label": "Hard",
+      "enabled": true,
+      "accent": "#f06b78"
+    },
+    {
+      "id": "extreme",
+      "label": "Extreme",
+      "enabled": false,
+      "status": "Coming soon",
+      "accent": "#9b7ff4"
+    }
   ],
   "questions": {
     "easy": [
-      {"id":"easy-01","type":"multiple_choice_vlog","prompt":"Which of these is the longest vlog?","options":[{"id":"A","text":"Camp ICN 2026","vlog_id":62},{"id":"B","text":"Spending 100 hours in the United Arab Emirates","vlog_id":18},{"id":"C","text":"Camps Annoubin Part 2","vlog_id":20},{"id":"D","text":"Can We Survive 24 Hours in the Garden?","vlog_id":67}],"correct_option_id":"B","related_vlog_ids":[18]},
-      {"id":"easy-02","type":"multiple_choice_detail","prompt":"In Camps Annoubin Part 2, who received the birthday surprise?","options":[{"id":"A","text":"Charbel"},{"id":"B","text":"Matteo"},{"id":"C","text":"Savio"},{"id":"D","text":"Elio"}],"correct_option_id":"C","related_vlog_ids":[20]},
-      {"id":"easy-03","type":"multiple_choice_detail","prompt":"In The Isolated Airbnb Getaway, which movie did the friends watch late at night?","options":[{"id":"A","text":"Home Alone"},{"id":"B","text":"Spider-Man 2"},{"id":"C","text":"The Amazing Spider-Man"},{"id":"D","text":"Avengers: Endgame"}],"correct_option_id":"B","related_vlog_ids":[22]},
-      {"id":"easy-04","type":"multiple_choice_detail","prompt":"In Spending 24 Hours On The Coast Of Jbeil, which game did the friends play using a plastic soda bottle?","options":[{"id":"A","text":"Truth or Dare"},{"id":"B","text":"Spin the Bottle"},{"id":"C","text":"Never Have I Ever"},{"id":"D","text":"Would You Rather"}],"correct_option_id":"B","related_vlog_ids":[12]},
-      {"id":"easy-05","type":"multiple_choice_detail","prompt":"At the beginning of Can We Survive 24 Hours in the Garden?, which sport did the group play?","options":[{"id":"A","text":"Basketball"},{"id":"B","text":"Volleyball"},{"id":"C","text":"Tennis"},{"id":"D","text":"Badminton"}],"correct_option_id":"B","related_vlog_ids":[67]},
-      {"id":"easy-06","type":"multiple_choice_detail","prompt":"In Private Resort in Batroun, which two national football teams did the friends watch play?","options":[{"id":"A","text":"Portugal and France"},{"id":"B","text":"Spain and Argentina"},{"id":"C","text":"Lebanon and Brazil"},{"id":"D","text":"Italy and Germany"}],"correct_option_id":"B","related_vlog_ids":[66]},
-      {"id":"easy-07","type":"true_false","prompt":"In The Isolated Airbnb Getaway, the friends used a purple dustpan to fan the charcoal grill.","correct_answer":true,"related_vlog_ids":[22]},
-      {"id":"easy-08","type":"multiple_choice_detail","prompt":"In Spiritual Ghosta Camps Vlog, which game did Elio and Charbel play by climbing across the dorm beds?","options":[{"id":"A","text":"Musical Chairs"},{"id":"B","text":"The Floor Is Lava"},{"id":"C","text":"Hide and Seek"},{"id":"D","text":"Simon Says"}],"correct_option_id":"B","related_vlog_ids":[10]},
-      {"id":"easy-09","type":"multiple_choice_vlog","prompt":"Which of these vlogs was filmed during summer?","options":[{"id":"A","text":"The Ski Vlog Of 2025","vlog_id":16},{"id":"B","text":"Camp ICN 2026","vlog_id":62},{"id":"C","text":"Christmas 2024","vlog_id":13},{"id":"D","text":"Sledging In The Mountains 2025","vlog_id":14}],"correct_option_id":"B","related_vlog_ids":[62]},
-      {"id":"easy-10","type":"multiple_choice_vlog","prompt":"Which of these vlogs features Elie?","options":[{"id":"A","text":"The Rockville Hike 2026 Vlog","vlog_id":63},{"id":"B","text":"Can We Survive 24 Hours in the Garden?","vlog_id":67},{"id":"C","text":"Exploring Rockville In 2024","vlog_id":11},{"id":"D","text":"Spending 24 Hours On The Coast Of Jbeil","vlog_id":12}],"correct_option_id":"B","related_vlog_ids":[67]}
+      {
+        "id": "easy-01",
+        "type": "multiple_choice_vlog",
+        "prompt": "Which of these is the longest vlog?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Camp ICN 2026",
+            "vlog_id": 62
+          },
+          {
+            "id": "B",
+            "text": "Spending 100 Hours in the United Arab Emirates",
+            "vlog_id": 18
+          },
+          {
+            "id": "C",
+            "text": "Camps Annoubin Part 2",
+            "vlog_id": 20
+          },
+          {
+            "id": "D",
+            "text": "Can We Survive 24 Hours in the Garden?",
+            "vlog_id": 67
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          18
+        ],
+        "correct_answer": "Spending 100 Hours in the United Arab Emirates",
+        "preview_disabled": false
+      },
+      {
+        "id": "easy-02",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:20}, who received the birthday surprise?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Charbel"
+          },
+          {
+            "id": "B",
+            "text": "Matteo"
+          },
+          {
+            "id": "C",
+            "text": "Savio"
+          },
+          {
+            "id": "D",
+            "text": "Elio"
+          }
+        ],
+        "correct_option_id": "C",
+        "related_vlog_ids": [
+          20
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "easy-03",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:22}, which movie did the friends watch late at night?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Home Alone"
+          },
+          {
+            "id": "B",
+            "text": "Spider-Man 2"
+          },
+          {
+            "id": "C",
+            "text": "The Amazing Spider-Man"
+          },
+          {
+            "id": "D",
+            "text": "Avengers: Endgame"
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          22
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "easy-04",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:12}, which game did the friends play using a plastic soda bottle?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Truth or Dare"
+          },
+          {
+            "id": "B",
+            "text": "Spin the Bottle"
+          },
+          {
+            "id": "C",
+            "text": "Never Have I Ever"
+          },
+          {
+            "id": "D",
+            "text": "Would You Rather"
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          12
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "easy-05",
+        "type": "multiple_choice_detail",
+        "prompt": "At the beginning of {vlog:67}, which sport did the group play?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Basketball"
+          },
+          {
+            "id": "B",
+            "text": "Volleyball"
+          },
+          {
+            "id": "C",
+            "text": "Tennis"
+          },
+          {
+            "id": "D",
+            "text": "Badminton"
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          67
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "easy-06",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:66}, which two national football teams did the friends watch play?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Portugal and France"
+          },
+          {
+            "id": "B",
+            "text": "Spain and Argentina"
+          },
+          {
+            "id": "C",
+            "text": "Lebanon and Brazil"
+          },
+          {
+            "id": "D",
+            "text": "Italy and Germany"
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          66
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "easy-07",
+        "type": "true_false",
+        "prompt": "In {vlog:22}, the friends used a purple dustpan to fan the charcoal grill.",
+        "correct_answer": true,
+        "related_vlog_ids": [
+          22
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "easy-08",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:10}, which game did Elio and Charbel play by climbing across the dorm beds?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Musical Chairs"
+          },
+          {
+            "id": "B",
+            "text": "The Floor Is Lava"
+          },
+          {
+            "id": "C",
+            "text": "Hide and Seek"
+          },
+          {
+            "id": "D",
+            "text": "Simon Says"
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          10
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "easy-09",
+        "type": "multiple_choice_vlog",
+        "prompt": "Which of these vlogs was filmed during summer?",
+        "options": [
+          {
+            "id": "A",
+            "text": "The Ski Vlog of 2025",
+            "vlog_id": 16
+          },
+          {
+            "id": "B",
+            "text": "Camp ICN 2026",
+            "vlog_id": 62
+          },
+          {
+            "id": "C",
+            "text": "Christmas 2024: Secret Santa & USEK Concert",
+            "vlog_id": 13
+          },
+          {
+            "id": "D",
+            "text": "Sledging in the Mountains 2025",
+            "vlog_id": 14
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          62
+        ],
+        "correct_answer": "Camp ICN 2026",
+        "preview_disabled": false
+      },
+      {
+        "id": "easy-10",
+        "type": "multiple_choice_vlog",
+        "prompt": "Which of these vlogs features Elie?",
+        "options": [
+          {
+            "id": "A",
+            "text": "The Rockville Hike 2026 Vlog",
+            "vlog_id": 63
+          },
+          {
+            "id": "B",
+            "text": "Can We Survive 24 Hours in the Garden?",
+            "vlog_id": 67
+          },
+          {
+            "id": "C",
+            "text": "Exploring Rockville in 2024",
+            "vlog_id": 11
+          },
+          {
+            "id": "D",
+            "text": "Spending 24 Hours on the Coast of Jbeil",
+            "vlog_id": 12
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          67
+        ],
+        "correct_answer": "Can We Survive 24 Hours in the Garden?",
+        "preview_disabled": true
+      }
     ],
     "medium": [
-      {"id":"medium-01","type":"multiple_choice_detail","prompt":"In Christmas 2024: Secret Santa & USEK Concert, what did the friends reuse as the box for Yara’s Secret Santa gift?","options":[{"id":"A","text":"An old cereal box"},{"id":"B","text":"An old headphone box"},{"id":"C","text":"A shoebox"},{"id":"D","text":"A small board-game box"}],"correct_option_id":"B","related_vlog_ids":[13]},
-      {"id":"medium-02","type":"multiple_choice_detail","prompt":"In Spiritual Ghosta Camps Vlog, why did Elio and Charbel eat za’atar instead of the spaghetti they expected?","options":[{"id":"A","text":"The spaghetti had already run out."},{"id":"B","text":"The spaghetti was reserved for the scouts."},{"id":"C","text":"They arrived after the kitchen closed."},{"id":"D","text":"They decided they preferred za’atar."}],"correct_option_id":"B","related_vlog_ids":[10]},
-      {"id":"medium-03","type":"multiple_choice_detail","prompt":"During the storytelling game in Camp ICN 2026, what were the friends trying to figure out about each story?","options":[{"id":"A","text":"Who had told the longest story."},{"id":"B","text":"Whether the story was true or made up."},{"id":"C","text":"When the story had happened."},{"id":"D","text":"Which friend had been mentioned most often."}],"correct_option_id":"B","related_vlog_ids":[62]},
-      {"id":"medium-04","type":"multiple_choice_detail","prompt":"In Cooking Competition, which three criteria did the judges use to evaluate the dishes?","options":[{"id":"A","text":"Presentation, taste and effort"},{"id":"B","text":"Creativity, speed and cleanliness"},{"id":"C","text":"Taste, portion size and cooking time"},{"id":"D","text":"Presentation, originality and cost"}],"correct_option_id":"A","related_vlog_ids":[8]},
-      {"id":"medium-05","type":"multiple_choice_detail","prompt":"In Cooking Competition, which dish did Savio prepare?","options":[{"id":"A","text":"Creamy mushroom fettuccine with parsley"},{"id":"B","text":"Noodles mixed with crushed chips, hot dogs and eggs"},{"id":"C","text":"Toasted wraps filled with hot dogs, meat and chips"},{"id":"D","text":"Spaghetti with tomato sauce and sliced hot dogs"}],"correct_option_id":"A","related_vlog_ids":[8]},
-      {"id":"medium-06","type":"multiple_choice_detail","prompt":"In Pasta Cooking Vlog, which pair of group sizes appeared across the two synchronized TikTok dances?","options":[{"id":"A","text":"Two and three people"},{"id":"B","text":"Three and four people"},{"id":"C","text":"Four and five people"},{"id":"D","text":"Five and six people"}],"correct_option_id":"B","related_vlog_ids":[7]},
-      {"id":"medium-07","type":"true_false","prompt":"In Cooking Competition, Charbel’s winning dish combined noodles, crushed chips, hot dogs and eggs.","correct_answer":true,"related_vlog_ids":[8]},
-      {"id":"medium-08","type":"multiple_choice_detail","prompt":"In GIMS Concert Vlog, which GIMS song received a perfect 10/10 rating on screen?","options":[{"id":"A","text":"Bella"},{"id":"B","text":"Sapés comme jamais"},{"id":"C","text":"Est-ce Que Tu M’aimes?"},{"id":"D","text":"J’me tire"}],"correct_option_id":"C","related_vlog_ids":[68]},
-      {"id":"medium-09","type":"multiple_choice_detail","prompt":"During the after-party DJ set in GIMS Concert Vlog, which two Kanye West songs were played?","options":[{"id":"A","text":"Runaway and Flashing Lights"},{"id":"B","text":"Power and Stronger"},{"id":"C","text":"Heartless and All of the Lights"},{"id":"D","text":"Gold Digger and Homecoming"}],"correct_option_id":"A","related_vlog_ids":[68]},
-      {"id":"medium-10","type":"multiple_choice_detail","prompt":"In Rockville 2023 Sleepover Vlog, what phrase did the friends use when referring to the deep vertical rock crevice?","options":[{"id":"A","text":"Le grand trou de Rockville"},{"id":"B","text":"Le gros trou de Rockville"},{"id":"C","text":"Le gros rocher de Rockville"},{"id":"D","text":"Le trou noir de Rockville"}],"correct_option_id":"B","related_vlog_ids":[27]}
+      {
+        "id": "medium-01",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:13}, what did the friends reuse as the box for Yara’s Secret Santa gift?",
+        "options": [
+          {
+            "id": "A",
+            "text": "An old cereal box"
+          },
+          {
+            "id": "B",
+            "text": "An old headphone box"
+          },
+          {
+            "id": "C",
+            "text": "A shoebox"
+          },
+          {
+            "id": "D",
+            "text": "A small board-game box"
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          13
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "medium-02",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:10}, why did Elio and Charbel eat za’atar instead of the spaghetti they expected?",
+        "options": [
+          {
+            "id": "A",
+            "text": "The spaghetti had already run out."
+          },
+          {
+            "id": "B",
+            "text": "The spaghetti was reserved for the scouts."
+          },
+          {
+            "id": "C",
+            "text": "They arrived after the kitchen closed."
+          },
+          {
+            "id": "D",
+            "text": "They decided they preferred za’atar."
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          10
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "medium-03",
+        "type": "multiple_choice_detail",
+        "prompt": "During the storytelling game in {vlog:62}, what were the friends trying to figure out about each story?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Who had told the longest story."
+          },
+          {
+            "id": "B",
+            "text": "Whether the story was true or made up."
+          },
+          {
+            "id": "C",
+            "text": "When the story had happened."
+          },
+          {
+            "id": "D",
+            "text": "Which friend had been mentioned most often."
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          62
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "medium-04",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:8}, which three criteria did the judges use to evaluate the dishes?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Presentation, taste and effort"
+          },
+          {
+            "id": "B",
+            "text": "Creativity, speed and cleanliness"
+          },
+          {
+            "id": "C",
+            "text": "Taste, portion size and cooking time"
+          },
+          {
+            "id": "D",
+            "text": "Presentation, originality and cost"
+          }
+        ],
+        "correct_option_id": "A",
+        "related_vlog_ids": [
+          8
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "medium-05",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:8}, which dish did Savio prepare?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Creamy mushroom fettuccine with parsley"
+          },
+          {
+            "id": "B",
+            "text": "Noodles mixed with crushed chips, hot dogs and eggs"
+          },
+          {
+            "id": "C",
+            "text": "Toasted wraps filled with hot dogs, meat and chips"
+          },
+          {
+            "id": "D",
+            "text": "Spaghetti with tomato sauce and sliced hot dogs"
+          }
+        ],
+        "correct_option_id": "A",
+        "related_vlog_ids": [
+          8
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "medium-06",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:7}, which pair of group sizes appeared across the two synchronized TikTok dances?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Two and three people"
+          },
+          {
+            "id": "B",
+            "text": "Three and four people"
+          },
+          {
+            "id": "C",
+            "text": "Four and five people"
+          },
+          {
+            "id": "D",
+            "text": "Five and six people"
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          7
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "medium-07",
+        "type": "true_false",
+        "prompt": "In {vlog:8}, Charbel’s winning dish combined noodles, crushed chips, hot dogs and eggs.",
+        "correct_answer": true,
+        "related_vlog_ids": [
+          8
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "medium-08",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:68}, which GIMS song received a perfect 10/10 rating on screen?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Bella"
+          },
+          {
+            "id": "B",
+            "text": "Sapés comme jamais"
+          },
+          {
+            "id": "C",
+            "text": "Est-ce Que Tu M’aimes?"
+          },
+          {
+            "id": "D",
+            "text": "J’me tire"
+          }
+        ],
+        "correct_option_id": "C",
+        "related_vlog_ids": [
+          68
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "medium-09",
+        "type": "multiple_choice_detail",
+        "prompt": "During the after-party DJ set in {vlog:68}, which two Kanye West songs were played?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Runaway and Flashing Lights"
+          },
+          {
+            "id": "B",
+            "text": "Power and Stronger"
+          },
+          {
+            "id": "C",
+            "text": "Heartless and All of the Lights"
+          },
+          {
+            "id": "D",
+            "text": "Gold Digger and Homecoming"
+          }
+        ],
+        "correct_option_id": "A",
+        "related_vlog_ids": [
+          68
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "medium-10",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:27}, what phrase did the friends use when referring to the deep vertical rock crevice?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Le grand trou de Rockville"
+          },
+          {
+            "id": "B",
+            "text": "Le gros trou de Rockville"
+          },
+          {
+            "id": "C",
+            "text": "Le gros rocher de Rockville"
+          },
+          {
+            "id": "D",
+            "text": "Le trou noir de Rockville"
+          }
+        ],
+        "correct_option_id": "B",
+        "related_vlog_ids": [
+          27
+        ],
+        "preview_disabled": false
+      }
     ],
-    "hard": [],
+    "hard": [
+      {
+        "id": "hard-01",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:68}, which song received a 6/10 rating on screen?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Changer"
+          },
+          {
+            "id": "B",
+            "text": "Bella"
+          },
+          {
+            "id": "C",
+            "text": "CIEL"
+          },
+          {
+            "id": "D",
+            "text": "Corazon"
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "Changer",
+        "related_vlog_ids": [
+          68
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-02",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:17}, what was the title of the group skit?",
+        "options": [
+          {
+            "id": "A",
+            "text": "El Saber"
+          },
+          {
+            "id": "B",
+            "text": "La Bohème"
+          },
+          {
+            "id": "C",
+            "text": "Un kilomètre à pied"
+          },
+          {
+            "id": "D",
+            "text": "Seif El Bahr"
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "El Saber",
+        "related_vlog_ids": [
+          17
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-03",
+        "type": "multiple_choice_detail",
+        "prompt": "When setting up their room in {vlog:20}, which two rugs did the friends unroll?",
+        "options": [
+          {
+            "id": "A",
+            "text": "A pink-and-black patterned rug and a brown rug"
+          },
+          {
+            "id": "B",
+            "text": "Two blue rugs"
+          },
+          {
+            "id": "C",
+            "text": "A red rug and a white rug"
+          },
+          {
+            "id": "D",
+            "text": "A green rug and a striped grey rug"
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "A pink-and-black patterned rug and a brown rug",
+        "related_vlog_ids": [
+          20
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-04",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:22}, what two colours lit up the stone guesthouse from the outside?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Blue and yellow"
+          },
+          {
+            "id": "B",
+            "text": "Pink and green"
+          },
+          {
+            "id": "C",
+            "text": "Red and purple"
+          },
+          {
+            "id": "D",
+            "text": "White and orange"
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_answer": "Pink and green",
+        "related_vlog_ids": [
+          22
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-05",
+        "type": "multiple_choice_detail",
+        "prompt": "During the chip taste test in {vlog:67}, which order shows the flavours from highest rating to lowest?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Light vinegar, nacho cheese, labneh"
+          },
+          {
+            "id": "B",
+            "text": "Nacho cheese, labneh, light vinegar"
+          },
+          {
+            "id": "C",
+            "text": "Labneh, light vinegar, nacho cheese"
+          },
+          {
+            "id": "D",
+            "text": "Nacho cheese, light vinegar, labneh"
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "Light vinegar, nacho cheese, labneh",
+        "related_vlog_ids": [
+          67
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-06",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:66}, which flag did the friends wave after Spain took a 1–0 lead?",
+        "options": [
+          {
+            "id": "A",
+            "text": "The Argentine flag"
+          },
+          {
+            "id": "B",
+            "text": "The Lebanese flag"
+          },
+          {
+            "id": "C",
+            "text": "The Spanish flag"
+          },
+          {
+            "id": "D",
+            "text": "The Brazilian flag"
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_answer": "The Spanish flag",
+        "related_vlog_ids": [
+          66
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-07",
+        "type": "true_false",
+        "prompt": "In {vlog:63}, the stray dog followed the friends for part of their hike back down.",
+        "correct_answer": true,
+        "related_vlog_ids": [
+          63
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-08",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:62}, how many pizzas were left when they began their pizza-slice game, after one of the original five had already been eaten?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Two"
+          },
+          {
+            "id": "B",
+            "text": "Three"
+          },
+          {
+            "id": "C",
+            "text": "Four"
+          },
+          {
+            "id": "D",
+            "text": "Five"
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_answer": "Four",
+        "related_vlog_ids": [
+          62
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-09",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:20}, what did the friends use as the second rug alongside the pink-and-black patterned one?",
+        "options": [
+          {
+            "id": "A",
+            "text": "A brown rug"
+          },
+          {
+            "id": "B",
+            "text": "A blue sleeping mat"
+          },
+          {
+            "id": "C",
+            "text": "A green carpet"
+          },
+          {
+            "id": "D",
+            "text": "A red blanket"
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "A brown rug",
+        "related_vlog_ids": [
+          20
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-10",
+        "type": "true_false",
+        "prompt": "In {vlog:12}, the friends ordered takeout from Anthony’s, including mac and cheese, sandwiches and fries.",
+        "correct_answer": true,
+        "related_vlog_ids": [
+          12
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-11",
+        "type": "multiple_choice_detail",
+        "prompt": "At the end of {vlog:11}, which song did the two friends sing while hiking back at dusk?",
+        "options": [
+          {
+            "id": "A",
+            "text": "I'm an Island Boy"
+          },
+          {
+            "id": "B",
+            "text": "Island in the Sun"
+          },
+          {
+            "id": "C",
+            "text": "Walking on Sunshine"
+          },
+          {
+            "id": "D",
+            "text": "I'm Still Standing"
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "I'm an Island Boy",
+        "related_vlog_ids": [
+          11
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-12",
+        "type": "multiple_choice_detail",
+        "prompt": "On the first morning of {vlog:10}, what jersey was Charbel wearing?",
+        "options": [
+          {
+            "id": "A",
+            "text": "A vintage blue-and-red Arsenal O2 jersey"
+          },
+          {
+            "id": "B",
+            "text": "A black-and-white Juventus jersey"
+          },
+          {
+            "id": "C",
+            "text": "A yellow Brazil jersey"
+          },
+          {
+            "id": "D",
+            "text": "A light blue Argentina jersey"
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "A vintage blue-and-red Arsenal O2 jersey",
+        "related_vlog_ids": [
+          10
+        ],
+        "preview_disabled": true
+      },
+      {
+        "id": "hard-13",
+        "type": "multiple_choice_detail",
+        "prompt": "In {vlog:27}, what did Charbel prepare late at night?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Noodles"
+          },
+          {
+            "id": "B",
+            "text": "Spaghetti"
+          },
+          {
+            "id": "C",
+            "text": "Fried rice"
+          },
+          {
+            "id": "D",
+            "text": "Hot dogs"
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "Noodles",
+        "related_vlog_ids": [
+          27
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-14",
+        "type": "multiple_choice_vlog",
+        "prompt": "Which of these vlogs shows the friends watching a football match from a pool using an outdoor projector?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Private Resort in Batroun",
+            "vlog_id": 66
+          },
+          {
+            "id": "B",
+            "text": "Can We Survive 24 Hours in the Garden?",
+            "vlog_id": 67
+          },
+          {
+            "id": "C",
+            "text": "Overnight at Lebanon's Most Isolated Airbnb",
+            "vlog_id": 22
+          },
+          {
+            "id": "D",
+            "text": "Spending 24 Hours on the Coast of Jbeil",
+            "vlog_id": 12
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "Private Resort in Batroun",
+        "related_vlog_ids": [
+          66
+        ],
+        "preview_disabled": false
+      },
+      {
+        "id": "hard-15",
+        "type": "multiple_choice_vlog",
+        "prompt": "Which of these vlogs includes the live-action Among Us/Mafia game around the campfire?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Can We Survive 24 Hours in the Garden?",
+            "vlog_id": 67
+          },
+          {
+            "id": "B",
+            "text": "Camp ICN 2026",
+            "vlog_id": 62
+          },
+          {
+            "id": "C",
+            "text": "Private Resort in Batroun",
+            "vlog_id": 66
+          },
+          {
+            "id": "D",
+            "text": "Spending 24 Hours on the Coast of Jbeil",
+            "vlog_id": 12
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_answer": "Can We Survive 24 Hours in the Garden?",
+        "related_vlog_ids": [
+          67
+        ],
+        "preview_disabled": false
+      }
+    ],
     "extreme": []
-  }
+  },
+  "last_updated": "2026-11-17",
+  "question_types": [
+    {
+      "id": "multiple_choice_vlog",
+      "label": "Multiple choice — choose a vlog"
+    },
+    {
+      "id": "multiple_choice_detail",
+      "label": "Multiple choice — detail from a vlog"
+    },
+    {
+      "id": "true_false",
+      "label": "True or false"
+    }
+  ],
+  "vlog_catalog": [
+    {
+      "id": 1,
+      "title": "First Vlog (2022)",
+      "thumbnail_url": "https://i.ytimg.com/vi/B2z6YZsCv3E/maxresdefault.jpg",
+      "youtube_id": "B2z6YZsCv3E",
+      "video_url": "https://www.youtube.com/watch?v=B2z6YZsCv3E",
+      "year": 2022
+    },
+    {
+      "id": 3,
+      "title": "Camp July 2023 Vlog",
+      "thumbnail_url": "https://i.ytimg.com/vi/TzH06BZel2A/maxresdefault.jpg",
+      "youtube_id": "TzH06BZel2A",
+      "video_url": "https://www.youtube.com/watch?v=TzH06BZel2A",
+      "year": 2023
+    },
+    {
+      "id": 4,
+      "title": "Téléphérique Vlog | Colo D'Art",
+      "thumbnail_url": "https://i.ytimg.com/vi/GWCzOeFwv30/maxresdefault.jpg",
+      "youtube_id": "GWCzOeFwv30",
+      "video_url": "https://www.youtube.com/watch?v=GWCzOeFwv30",
+      "year": 2023
+    },
+    {
+      "id": 6,
+      "title": "Daraj El Ward Premiere Vlog",
+      "thumbnail_url": "https://i.ytimg.com/vi/Mx5Sy4QatHE/maxresdefault.jpg",
+      "youtube_id": "Mx5Sy4QatHE",
+      "video_url": "https://www.youtube.com/watch?v=Mx5Sy4QatHE",
+      "year": 2023
+    },
+    {
+      "id": 7,
+      "title": "Pasta Cooking Vlog",
+      "thumbnail_url": "https://i3.ytimg.com/vi/cNydJUCnbUU/maxresdefault.jpg",
+      "youtube_id": "cNydJUCnbUU",
+      "video_url": "https://www.youtube.com/watch?v=cNydJUCnbUU",
+      "year": 2023
+    },
+    {
+      "id": 8,
+      "title": "Cooking Competition",
+      "thumbnail_url": "https://i3.ytimg.com/vi/qI7U-pnNgXI/maxresdefault.jpg",
+      "youtube_id": "qI7U-pnNgXI",
+      "video_url": "https://www.youtube.com/watch?v=qI7U-pnNgXI",
+      "year": 2024
+    },
+    {
+      "id": 9,
+      "title": "Two Idiots Attempt to Sledge in Laqlouq 2024",
+      "thumbnail_url": "https://i.postimg.cc/jjG7yc53/hqdefault.jpg",
+      "youtube_id": "OFLwkQyxysM",
+      "video_url": "https://www.youtube.com/watch?v=OFLwkQyxysM",
+      "year": 2024
+    },
+    {
+      "id": 10,
+      "title": "Spiritual Ghosta Camps Vlog",
+      "thumbnail_url": "https://i.ytimg.com/vi/psmCoACS1mY/maxresdefault.jpg",
+      "youtube_id": "psmCoACS1mY",
+      "video_url": "https://www.youtube.com/watch?v=psmCoACS1mY",
+      "year": 2024
+    },
+    {
+      "id": 11,
+      "title": "Exploring Rockville in 2024",
+      "thumbnail_url": "https://i.ytimg.com/vi/roJy4Rh0dAI/maxresdefault.jpg",
+      "youtube_id": "roJy4Rh0dAI",
+      "video_url": "https://www.youtube.com/watch?v=roJy4Rh0dAI",
+      "year": 2024
+    },
+    {
+      "id": 12,
+      "title": "Spending 24 Hours on the Coast of Jbeil",
+      "thumbnail_url": "https://i.ytimg.com/vi/sa_BHb_bX5g/maxresdefault.jpg",
+      "youtube_id": "sa_BHb_bX5g",
+      "video_url": "https://www.youtube.com/watch?v=BlCvxAdABcg",
+      "year": 2024
+    },
+    {
+      "id": 13,
+      "title": "Christmas 2024: Secret Santa & USEK Concert",
+      "thumbnail_url": "https://i3.ytimg.com/vi/sylhcuHOFPo/maxresdefault.jpg",
+      "youtube_id": "sylhcuHOFPo",
+      "video_url": "https://www.youtube.com/watch?v=sylhcuHOFPo",
+      "year": 2024
+    },
+    {
+      "id": 14,
+      "title": "Sledging in the Mountains 2025",
+      "thumbnail_url": "https://i.ytimg.com/vi/lDHnueOdyek/maxresdefault.jpg",
+      "youtube_id": "lDHnueOdyek",
+      "video_url": "https://www.youtube.com/watch?v=lDHnueOdyek",
+      "year": 2025
+    },
+    {
+      "id": 15,
+      "title": "Cooking Competition 2 (2025 Edition)",
+      "thumbnail_url": "https://i3.ytimg.com/vi/2CX35PnVMI0/maxresdefault.jpg",
+      "youtube_id": "2CX35PnVMI0",
+      "video_url": "https://www.youtube.com/watch?v=2CX35PnVMI0",
+      "year": 2025
+    },
+    {
+      "id": 16,
+      "title": "The Ski Vlog of 2025",
+      "thumbnail_url": "https://i3.ytimg.com/vi/Su6nWgMvDjE/maxresdefault.jpg",
+      "youtube_id": "Su6nWgMvDjE",
+      "video_url": "https://www.youtube.com/watch?v=Su6nWgMvDjE",
+      "year": 2025
+    },
+    {
+      "id": 17,
+      "title": "Spiritual Ghosta Camps 2025",
+      "thumbnail_url": "https://i.ytimg.com/vi/R_YH3Qq3n_c/maxresdefault.jpg",
+      "youtube_id": "R_YH3Qq3n_c",
+      "video_url": "https://www.youtube.com/watch?v=R_YH3Qq3n_c",
+      "year": 2025
+    },
+    {
+      "id": 18,
+      "title": "Spending 100 Hours in the United Arab Emirates",
+      "thumbnail_url": "https://i.ytimg.com/vi/hFhiDDEK3pc/maxresdefault.jpg",
+      "youtube_id": "hFhiDDEK3pc",
+      "video_url": "https://www.youtube.com/watch?v=hFhiDDEK3pc",
+      "year": 2025
+    },
+    {
+      "id": 19,
+      "title": "Camps ICN 2025 Vlog",
+      "thumbnail_url": "https://img.youtube.com/vi/RyVZZ5yYvmA/maxresdefault.jpg",
+      "youtube_id": "RyVZZ5yYvmA",
+      "video_url": "https://www.youtube.com/watch?v=RyVZZ5yYvmA",
+      "year": 2025
+    },
+    {
+      "id": 20,
+      "title": "Camps Annoubin Part 2",
+      "thumbnail_url": "https://i.ytimg.com/vi/1yQC4Y99yGk/maxresdefault.jpg",
+      "youtube_id": "1yQC4Y99yGk",
+      "video_url": "https://www.youtube.com/watch?v=1yQC4Y99yGk",
+      "year": 2025
+    },
+    {
+      "id": 21,
+      "title": "24 Hours in Canada's Most American City",
+      "thumbnail_url": "https://i.ytimg.com/vi/hrcgdwzxekA/maxresdefault.jpg",
+      "youtube_id": "hrcgdwzxekA",
+      "video_url": "https://www.youtube.com/watch?v=hrcgdwzxekA",
+      "year": 2025
+    },
+    {
+      "id": 22,
+      "title": "Overnight at Lebanon's Most Isolated Airbnb",
+      "thumbnail_url": "https://i.ytimg.com/vi/IoMK377FvG4/maxresdefault.jpg",
+      "youtube_id": "IoMK377FvG4",
+      "video_url": "https://www.youtube.com/watch?v=IoMK377FvG4",
+      "year": 2025
+    },
+    {
+      "id": 27,
+      "title": "Rockville Sleepover August 2023 Vlog",
+      "thumbnail_url": "https://i3.ytimg.com/vi/bPiOqKGWwKk/maxresdefault.jpg",
+      "youtube_id": "bPiOqKGWwKk",
+      "video_url": "https://www.youtube.com/watch?v=bPiOqKGWwKk",
+      "year": 2023
+    },
+    {
+      "id": 59,
+      "title": "I Spent 27 Hours Flying 9,000km Alone",
+      "thumbnail_url": "https://i3.ytimg.com/vi/eX7JFxf9GSU/maxresdefault.jpg",
+      "youtube_id": "eX7JFxf9GSU",
+      "video_url": "https://www.youtube.com/watch?v=eX7JFxf9GSU",
+      "year": 2026
+    },
+    {
+      "id": 62,
+      "title": "Camp ICN 2026",
+      "thumbnail_url": "https://img.youtube.com/vi/a0B5e43rVQk/maxresdefault.jpg",
+      "youtube_id": "a0B5e43rVQk",
+      "video_url": "https://www.youtube.com/watch?v=a0B5e43rVQk",
+      "year": 2026
+    },
+    {
+      "id": 63,
+      "title": "The Rockville Hike 2026 Vlog",
+      "thumbnail_url": "https://i3.ytimg.com/vi/dp66hJbDpiU/maxresdefault.jpg",
+      "youtube_id": "dp66hJbDpiU",
+      "video_url": "https://www.youtube.com/watch?v=dp66hJbDpiU",
+      "year": 2026
+    },
+    {
+      "id": 66,
+      "title": "Private Resort in Batroun",
+      "thumbnail_url": "https://i3.ytimg.com/vi/Y4nRtC50pIg/maxresdefault.jpg",
+      "youtube_id": "Y4nRtC50pIg",
+      "video_url": "https://www.youtube.com/watch?v=Y4nRtC50pIg",
+      "year": 2026
+    },
+    {
+      "id": 67,
+      "title": "Can We Survive 24 Hours in the Garden?",
+      "thumbnail_url": "https://i3.ytimg.com/vi/qy0F_1-FKvc/maxresdefault.jpg",
+      "youtube_id": "qy0F_1-FKvc",
+      "video_url": "https://www.youtube.com/watch?v=qy0F_1-FKvc",
+      "year": 2026
+    },
+    {
+      "id": 68,
+      "title": "GIMS Live in Lebanon",
+      "thumbnail_url": "https://i3.ytimg.com/vi/hBTmh0-xdFw/maxresdefault.jpg",
+      "youtube_id": "hBTmh0-xdFw",
+      "video_url": "https://www.youtube.com/watch?v=hBTmh0-xdFw",
+      "year": 2026
+    }
+  ],
+  "selection_notes": [
+    "All active questions use multiple choice (choose a vlog), multiple choice (detail from a vlog), or true/false.",
+    "Vlog titles displayed in questions and choices are cleaned to remove cast-name credits such as 'w/ ...'.",
+    "Vlog-title placeholders use the format {vlog:ID}; the website renders a thumbnail tooltip when preview is enabled.",
+    "Questions asking which vlog features a particular person suppress thumbnail previews to avoid revealing the answer.",
+    "Multiple-choice questions where the answer is a vlog use thumbnail cards unless preview_disabled is true."
+  ],
+  "data_notes": [
+    "Vlog metadata and thumbnails are taken from the enriched archive export based on the supplied 27-row CSV snapshot.",
+    "Detailed question facts are based on the user's supplied summaries for vlogs 1–20; these summaries are user-provided and not independently verified against the videos.",
+    "Hard questions are deliberately varied across the three supported question formats."
+  ]
 }
