@@ -790,29 +790,29 @@
       {
         "id": "hard-09",
         "type": "multiple_choice_detail",
-        "prompt": "In {vlog:20}, what did the friends use as the second rug alongside the pink-and-black patterned one?",
+        "prompt": "In {vlog:14}, what did the friends place on Jean-Luc the snowman’s chest as a button?",
         "options": [
           {
             "id": "A",
-            "text": "A brown rug"
+            "text": "A blue bottle cap"
           },
           {
             "id": "B",
-            "text": "A blue sleeping mat"
+            "text": "A red ribbon"
           },
           {
             "id": "C",
-            "text": "A green carpet"
+            "text": "A small stone"
           },
           {
             "id": "D",
-            "text": "A red blanket"
+            "text": "A pine cone"
           }
         ],
         "correct_option_id": "A",
-        "correct_answer": "A brown rug",
+        "correct_answer": "A blue bottle cap",
         "related_vlog_ids": [
-          20
+          14
         ],
         "preview_disabled": false
       },
@@ -1074,7 +1074,7 @@
       "id": 12,
       "title": "Spending 24 Hours on the Coast of Jbeil",
       "thumbnail_url": "https://i.ytimg.com/vi/sa_BHb_bX5g/maxresdefault.jpg",
-      "youtube_id": "sa_BHb_bX5g",
+      "youtube_id": "BlCvxAdABcg",
       "video_url": "https://www.youtube.com/watch?v=BlCvxAdABcg",
       "year": 2024
     },
